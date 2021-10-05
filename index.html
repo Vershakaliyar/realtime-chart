@@ -60,7 +60,7 @@
             y: {
                 label: {
                     text: '%',
-                    position: 'outer-middle',
+                    position: 'middle',
                 }
             }
 
@@ -121,10 +121,10 @@
             ],
             type: 'gauge',
             onclick: function (d, i) {
-                console.log("onclick", d, i);
+                console.log("ondoubleclick", d, i);
             },
             onmouseover: function (d, i) {
-                console.log("onmouseover", d, i);
+                console.log("onmousehover", d, i);
             },
             onmouseout: function (d, i) {
                 console.log("onmouseout", d, i);
