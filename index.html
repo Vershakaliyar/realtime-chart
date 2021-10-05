@@ -60,7 +60,7 @@
             y: {
                 label: {
                     text: '%',
-                    position: 'middle',
+                    position: 'outer-middle',
                 }
             }
 
@@ -95,11 +95,11 @@
             max: 100, // 100 is default
         },
         color: {
-            pattern: ['#60B044', '#F6C600', '#F97600', '#FF0000'], // the three color levels for the percentage values.
+            pattern: ['#60B044', '#F6C600', '#F97600', '#FF9700'], // the three color levels for the percentage values.
             threshold: {
                 //            unit: 'value', // percentage is default
                 //            max: 200, // 100 is default
-                values: [30, 60, 90, 100]
+                values: [40, 60, 90, 100]
             }
         },
         size: {
@@ -121,10 +121,10 @@
             ],
             type: 'gauge',
             onclick: function (d, i) {
-                console.log("ondoubleclick", d, i);
+                console.log("onclick", d, i);
             },
             onmouseover: function (d, i) {
-                console.log("onmousehover", d, i);
+                console.log("onmouseover", d, i);
             },
             onmouseout: function (d, i) {
                 console.log("onmouseout", d, i);
